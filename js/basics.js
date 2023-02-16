@@ -74,4 +74,6 @@ function clearTodos(){
     localStorage.removeItem('todos');
 }
 
-
+fetch("https://spring-boot-learning.onrender.com/api/v1/contact/list?page=0&size=20")
+.then(response=>response.json())
+.then(data=>console.log(data));
